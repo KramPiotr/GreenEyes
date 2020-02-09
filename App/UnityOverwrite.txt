@@ -6,12 +6,13 @@
 # Write a line equal to 'keep-all' (without quotes) to keep files regardless their modification (preserved accross builds)
 # Default behavior is to never overwrite files
 GreenEyes.sln: modified
+GeneratedProjects\UWP\Assembly-CSharp\project.json: 88AA7FF964823F6407718C34CA0DFE19
 GeneratedProjects\UWP\Unity.Analytics.DataPrivacy\project.json: 88AA7FF964823F6407718C34CA0DFE19
 GeneratedProjects\UWP\Unity.TextMeshPro\project.json: 88AA7FF964823F6407718C34CA0DFE19
 GeneratedProjects\UWP\Unity.XR.WindowsMR\project.json: 88AA7FF964823F6407718C34CA0DFE19
 GreenEyes\App.cs: CA1A493737FBB43DD923E35F7065F380
-GreenEyes\AssemblyConverterArgs.txt: DC0401AADD2DD355BECF1E94B167812F
-GreenEyes\GreenEyes.csproj: 2DA1C0E961C46D3FE024803090EC25F9
+GreenEyes\AssemblyConverterArgs.txt: 45BF4381ED23FAD2A7340E8CDFF2E025
+GreenEyes\GreenEyes.csproj: C088DCDCD504717F9BD4C7B26A29799D
 GreenEyes\GreenEyes.csproj.user: modified
 GreenEyes\Package.appxmanifest: D9093EA973509063812C77D12293FAE4
 GreenEyes\project.json: CC10A2BA10723B75F669B6E9E5EE19C9

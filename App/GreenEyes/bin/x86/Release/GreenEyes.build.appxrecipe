@@ -488,6 +488,9 @@
     <AppxPackagedFile Include="C:\Users\mahcl\Documents\cst_IB\group-proj\GreenEyes\App\GreenEyes\bin\x86\Release\resources.pri">
       <PackagePath>resources.pri</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mahcl\Documents\cst_IB\group-proj\GreenEyes\App\GreenEyes\UnityEngine.SpriteMaskModule.dll">
+      <PackagePath>UnityEngine.SpriteMaskModule.dll</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\mahcl\Documents\cst_IB\group-proj\GreenEyes\App\GreenEyes\UnityEngine.SpriteShapeModule.dll">
       <PackagePath>UnityEngine.SpriteShapeModule.dll</PackagePath>
     </AppxPackagedFile>
@@ -518,11 +521,11 @@
     <AppxPackagedFile Include="C:\Users\mahcl\Documents\cst_IB\group-proj\GreenEyes\App\GreenEyes\UnityEngine.UIElementsModule.dll">
       <PackagePath>UnityEngine.UIElementsModule.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\mahcl\Documents\cst_IB\group-proj\GreenEyes\App\GreenEyes\UnityEngine.SpriteMaskModule.dll">
-      <PackagePath>UnityEngine.SpriteMaskModule.dll</PackagePath>
-    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\mahcl\Documents\cst_IB\group-proj\GreenEyes\App\GreenEyes\UnityEngine.UIModule.dll">
       <PackagePath>UnityEngine.UIModule.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mahcl\Documents\cst_IB\group-proj\GreenEyes\App\GreenEyes\UnityEngine.UNETModule.dll">
+      <PackagePath>UnityEngine.UNETModule.dll</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\mahcl\Documents\cst_IB\group-proj\GreenEyes\App\GreenEyes\UnityEngine.UnityAnalyticsModule.dll">
       <PackagePath>UnityEngine.UnityAnalyticsModule.dll</PackagePath>
@@ -560,14 +563,14 @@
     <AppxPackagedFile Include="C:\Users\mahcl\Documents\cst_IB\group-proj\GreenEyes\App\GreenEyes\UnityEngine.WindModule.dll">
       <PackagePath>UnityEngine.WindModule.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\mahcl\Documents\cst_IB\group-proj\GreenEyes\App\GreenEyes\UnityEngine.UNETModule.dll">
-      <PackagePath>UnityEngine.UNETModule.dll</PackagePath>
+    <AppxPackagedFile Include="C:\Users\mahcl\Documents\cst_IB\group-proj\GreenEyes\App\GreenEyes\UnityEngine.XRModule.dll">
+      <PackagePath>UnityEngine.XRModule.dll</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\mahcl\Documents\cst_IB\group-proj\GreenEyes\App\GreenEyes\UnityEngine.SharedInternalsModule.dll">
       <PackagePath>UnityEngine.SharedInternalsModule.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\mahcl\Documents\cst_IB\group-proj\GreenEyes\App\GreenEyes\UnityEngine.ScreenCaptureModule.dll">
-      <PackagePath>UnityEngine.ScreenCaptureModule.dll</PackagePath>
+    <AppxPackagedFile Include="C:\Users\mahcl\Documents\cst_IB\group-proj\GreenEyes\App\GreenEyes\UnityEngine.PhysicsModule.dll">
+      <PackagePath>UnityEngine.PhysicsModule.dll</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\mahcl\Documents\cst_IB\group-proj\GreenEyes\App\GreenEyes\UnityEngine.AccessibilityModule.dll">
       <PackagePath>UnityEngine.AccessibilityModule.dll</PackagePath>
@@ -632,11 +635,8 @@
     <AppxPackagedFile Include="C:\Users\mahcl\Documents\cst_IB\group-proj\GreenEyes\App\GreenEyes\UnityEngine.Physics2DModule.dll">
       <PackagePath>UnityEngine.Physics2DModule.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\mahcl\Documents\cst_IB\group-proj\GreenEyes\App\GreenEyes\UnityEngine.PhysicsModule.dll">
-      <PackagePath>UnityEngine.PhysicsModule.dll</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\mahcl\Documents\cst_IB\group-proj\GreenEyes\App\GreenEyes\UnityEngine.XRModule.dll">
-      <PackagePath>UnityEngine.XRModule.dll</PackagePath>
+    <AppxPackagedFile Include="C:\Users\mahcl\Documents\cst_IB\group-proj\GreenEyes\App\GreenEyes\UnityEngine.ScreenCaptureModule.dll">
+      <PackagePath>UnityEngine.ScreenCaptureModule.dll</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\mahcl\Documents\cst_IB\group-proj\GreenEyes\App\GreenEyes\UnityEngine.Timeline.dll">
       <PackagePath>UnityEngine.Timeline.dll</PackagePath>
@@ -664,6 +664,9 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\mahcl\Documents\cst_IB\group-proj\GreenEyes\App\GreenEyes\Unity.XR.WindowsMR.dll">
       <PackagePath>Unity.XR.WindowsMR.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mahcl\Documents\cst_IB\group-proj\GreenEyes\App\GreenEyes\Assembly-CSharp.dll">
+      <PackagePath>Assembly-CSharp.dll</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\mahcl\Documents\cst_IB\group-proj\GreenEyes\App\GreenEyes\bin\x86\Release\Core\GreenEyes.exe">
       <PackagePath>GreenEyes.exe</PackagePath>

@@ -2237,6 +2237,19 @@
           }
         }
       },
+      "Assembly-CSharp/1.0.0": {
+        "type": "project",
+        "framework": "UAP,Version=v10.0.10240",
+        "dependencies": {
+          "Microsoft.ApplicationInsights": "1.0.0",
+          "Microsoft.ApplicationInsights.PersistenceChannel": "1.0.0",
+          "Microsoft.ApplicationInsights.WindowsApps": "1.0.0",
+          "Microsoft.NETCore.UniversalWindowsPlatform": "5.0.0",
+          "Unity.Analytics.DataPrivacy": "1.0.0",
+          "Unity.TextMeshPro": "1.0.0",
+          "Unity.XR.WindowsMR": "1.0.0"
+        }
+      },
       "Unity.Analytics.DataPrivacy/1.0.0": {
         "type": "project",
         "framework": "UAP,Version=v10.0.10240",
@@ -4585,6 +4598,19 @@
         },
         "runtime": {
           "lib/netcore50/System.Xml.XmlSerializer.dll": {}
+        }
+      },
+      "Assembly-CSharp/1.0.0": {
+        "type": "project",
+        "framework": "UAP,Version=v10.0.10240",
+        "dependencies": {
+          "Microsoft.ApplicationInsights": "1.0.0",
+          "Microsoft.ApplicationInsights.PersistenceChannel": "1.0.0",
+          "Microsoft.ApplicationInsights.WindowsApps": "1.0.0",
+          "Microsoft.NETCore.UniversalWindowsPlatform": "5.0.0",
+          "Unity.Analytics.DataPrivacy": "1.0.0",
+          "Unity.TextMeshPro": "1.0.0",
+          "Unity.XR.WindowsMR": "1.0.0"
         }
       },
       "Unity.Analytics.DataPrivacy/1.0.0": {
@@ -6973,6 +6999,19 @@
           "runtimes/aot/lib/netcore50/System.Xml.XmlSerializer.dll": {}
         }
       },
+      "Assembly-CSharp/1.0.0": {
+        "type": "project",
+        "framework": "UAP,Version=v10.0.10240",
+        "dependencies": {
+          "Microsoft.ApplicationInsights": "1.0.0",
+          "Microsoft.ApplicationInsights.PersistenceChannel": "1.0.0",
+          "Microsoft.ApplicationInsights.WindowsApps": "1.0.0",
+          "Microsoft.NETCore.UniversalWindowsPlatform": "5.0.0",
+          "Unity.Analytics.DataPrivacy": "1.0.0",
+          "Unity.TextMeshPro": "1.0.0",
+          "Unity.XR.WindowsMR": "1.0.0"
+        }
+      },
       "Unity.Analytics.DataPrivacy/1.0.0": {
         "type": "project",
         "framework": "UAP,Version=v10.0.10240",
@@ -9330,6 +9369,19 @@
         },
         "runtime": {
           "lib/netcore50/System.Xml.XmlSerializer.dll": {}
+        }
+      },
+      "Assembly-CSharp/1.0.0": {
+        "type": "project",
+        "framework": "UAP,Version=v10.0.10240",
+        "dependencies": {
+          "Microsoft.ApplicationInsights": "1.0.0",
+          "Microsoft.ApplicationInsights.PersistenceChannel": "1.0.0",
+          "Microsoft.ApplicationInsights.WindowsApps": "1.0.0",
+          "Microsoft.NETCore.UniversalWindowsPlatform": "5.0.0",
+          "Unity.Analytics.DataPrivacy": "1.0.0",
+          "Unity.TextMeshPro": "1.0.0",
+          "Unity.XR.WindowsMR": "1.0.0"
         }
       },
       "Unity.Analytics.DataPrivacy/1.0.0": {
@@ -11727,6 +11779,19 @@
           "runtimes/aot/lib/netcore50/System.Xml.XmlSerializer.dll": {}
         }
       },
+      "Assembly-CSharp/1.0.0": {
+        "type": "project",
+        "framework": "UAP,Version=v10.0.10240",
+        "dependencies": {
+          "Microsoft.ApplicationInsights": "1.0.0",
+          "Microsoft.ApplicationInsights.PersistenceChannel": "1.0.0",
+          "Microsoft.ApplicationInsights.WindowsApps": "1.0.0",
+          "Microsoft.NETCore.UniversalWindowsPlatform": "5.0.0",
+          "Unity.Analytics.DataPrivacy": "1.0.0",
+          "Unity.TextMeshPro": "1.0.0",
+          "Unity.XR.WindowsMR": "1.0.0"
+        }
+      },
       "Unity.Analytics.DataPrivacy/1.0.0": {
         "type": "project",
         "framework": "UAP,Version=v10.0.10240",
@@ -14084,6 +14149,19 @@
         },
         "runtime": {
           "lib/netcore50/System.Xml.XmlSerializer.dll": {}
+        }
+      },
+      "Assembly-CSharp/1.0.0": {
+        "type": "project",
+        "framework": "UAP,Version=v10.0.10240",
+        "dependencies": {
+          "Microsoft.ApplicationInsights": "1.0.0",
+          "Microsoft.ApplicationInsights.PersistenceChannel": "1.0.0",
+          "Microsoft.ApplicationInsights.WindowsApps": "1.0.0",
+          "Microsoft.NETCore.UniversalWindowsPlatform": "5.0.0",
+          "Unity.Analytics.DataPrivacy": "1.0.0",
+          "Unity.TextMeshPro": "1.0.0",
+          "Unity.XR.WindowsMR": "1.0.0"
         }
       },
       "Unity.Analytics.DataPrivacy/1.0.0": {
@@ -16479,6 +16557,19 @@
         },
         "runtime": {
           "runtimes/aot/lib/netcore50/System.Xml.XmlSerializer.dll": {}
+        }
+      },
+      "Assembly-CSharp/1.0.0": {
+        "type": "project",
+        "framework": "UAP,Version=v10.0.10240",
+        "dependencies": {
+          "Microsoft.ApplicationInsights": "1.0.0",
+          "Microsoft.ApplicationInsights.PersistenceChannel": "1.0.0",
+          "Microsoft.ApplicationInsights.WindowsApps": "1.0.0",
+          "Microsoft.NETCore.UniversalWindowsPlatform": "5.0.0",
+          "Unity.Analytics.DataPrivacy": "1.0.0",
+          "Unity.TextMeshPro": "1.0.0",
+          "Unity.XR.WindowsMR": "1.0.0"
         }
       },
       "Unity.Analytics.DataPrivacy/1.0.0": {
@@ -25004,6 +25095,11 @@
         "system.xml.xmlserializer.nuspec"
       ]
     },
+    "Assembly-CSharp/1.0.0": {
+      "type": "project",
+      "path": "../GeneratedProjects/UWP/Assembly-CSharp/project.json",
+      "msbuildProject": "../GeneratedProjects/UWP/Assembly-CSharp/Assembly-CSharp.csproj"
+    },
     "Unity.Analytics.DataPrivacy/1.0.0": {
       "type": "project",
       "path": "../GeneratedProjects/UWP/Unity.Analytics.DataPrivacy/project.json",
@@ -25052,6 +25148,9 @@
       "frameworks": {
         "uap10.0.10240": {
           "projectReferences": {
+            "C:\\Users\\mahcl\\Documents\\cst_IB\\group-proj\\GreenEyes\\App\\GeneratedProjects\\UWP\\Assembly-CSharp\\Assembly-CSharp.csproj": {
+              "projectPath": "C:\\Users\\mahcl\\Documents\\cst_IB\\group-proj\\GreenEyes\\App\\GeneratedProjects\\UWP\\Assembly-CSharp\\Assembly-CSharp.csproj"
+            },
             "C:\\Users\\mahcl\\Documents\\cst_IB\\group-proj\\GreenEyes\\App\\GeneratedProjects\\UWP\\Unity.Analytics.DataPrivacy\\Unity.Analytics.DataPrivacy.csproj": {
               "projectPath": "C:\\Users\\mahcl\\Documents\\cst_IB\\group-proj\\GreenEyes\\App\\GeneratedProjects\\UWP\\Unity.Analytics.DataPrivacy\\Unity.Analytics.DataPrivacy.csproj"
             },
