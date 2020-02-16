@@ -16217,19 +16217,19 @@
     "UAP,Version=v10.0.10240": []
   },
   "packageFolders": {
-    "C:\\Users\\mahcl\\.nuget\\packages\\": {}
+    "C:\\Users\\iihal\\.nuget\\packages\\": {}
   },
   "project": {
     "restore": {
-      "projectUniqueName": "C:\\Users\\mahcl\\Documents\\cst_IB\\group-proj\\GreenEyes\\App\\GeneratedProjects\\UWP\\Assembly-CSharp\\Assembly-CSharp.csproj",
+      "projectUniqueName": "D:\\yiyi\\Cambridge\\GreenEyeObjectDetection\\GreenEyeObjectDetection\\App\\GeneratedProjects\\UWP\\Assembly-CSharp\\Assembly-CSharp.csproj",
       "projectName": "Assembly-CSharp",
-      "projectPath": "C:\\Users\\mahcl\\Documents\\cst_IB\\group-proj\\GreenEyes\\App\\GeneratedProjects\\UWP\\Assembly-CSharp\\Assembly-CSharp.csproj",
-      "projectJsonPath": "C:\\Users\\mahcl\\Documents\\cst_IB\\group-proj\\GreenEyes\\App\\GeneratedProjects\\UWP\\Assembly-CSharp\\project.json",
-      "packagesPath": "C:\\Users\\mahcl\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\mahcl\\Documents\\cst_IB\\group-proj\\GreenEyes\\App\\GeneratedProjects\\UWP\\Assembly-CSharp\\obj\\",
+      "projectPath": "D:\\yiyi\\Cambridge\\GreenEyeObjectDetection\\GreenEyeObjectDetection\\App\\GeneratedProjects\\UWP\\Assembly-CSharp\\Assembly-CSharp.csproj",
+      "projectJsonPath": "D:\\yiyi\\Cambridge\\GreenEyeObjectDetection\\GreenEyeObjectDetection\\App\\GeneratedProjects\\UWP\\Assembly-CSharp\\project.json",
+      "packagesPath": "C:\\Users\\iihal\\.nuget\\packages\\",
+      "outputPath": "D:\\yiyi\\Cambridge\\GreenEyeObjectDetection\\GreenEyeObjectDetection\\App\\GeneratedProjects\\UWP\\Assembly-CSharp\\obj\\",
       "projectStyle": "ProjectJson",
       "configFilePaths": [
-        "C:\\Users\\mahcl\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\iihal\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "sources": {
@@ -16239,14 +16239,14 @@
       "frameworks": {
         "uap10.0.10240": {
           "projectReferences": {
-            "C:\\Users\\mahcl\\Documents\\cst_IB\\group-proj\\GreenEyes\\App\\GeneratedProjects\\UWP\\Unity.Analytics.DataPrivacy\\Unity.Analytics.DataPrivacy.csproj": {
-              "projectPath": "C:\\Users\\mahcl\\Documents\\cst_IB\\group-proj\\GreenEyes\\App\\GeneratedProjects\\UWP\\Unity.Analytics.DataPrivacy\\Unity.Analytics.DataPrivacy.csproj"
+            "D:\\yiyi\\Cambridge\\GreenEyeObjectDetection\\GreenEyeObjectDetection\\App\\GeneratedProjects\\UWP\\Unity.Analytics.DataPrivacy\\Unity.Analytics.DataPrivacy.csproj": {
+              "projectPath": "D:\\yiyi\\Cambridge\\GreenEyeObjectDetection\\GreenEyeObjectDetection\\App\\GeneratedProjects\\UWP\\Unity.Analytics.DataPrivacy\\Unity.Analytics.DataPrivacy.csproj"
             },
-            "C:\\Users\\mahcl\\Documents\\cst_IB\\group-proj\\GreenEyes\\App\\GeneratedProjects\\UWP\\Unity.TextMeshPro\\Unity.TextMeshPro.csproj": {
-              "projectPath": "C:\\Users\\mahcl\\Documents\\cst_IB\\group-proj\\GreenEyes\\App\\GeneratedProjects\\UWP\\Unity.TextMeshPro\\Unity.TextMeshPro.csproj"
+            "D:\\yiyi\\Cambridge\\GreenEyeObjectDetection\\GreenEyeObjectDetection\\App\\GeneratedProjects\\UWP\\Unity.TextMeshPro\\Unity.TextMeshPro.csproj": {
+              "projectPath": "D:\\yiyi\\Cambridge\\GreenEyeObjectDetection\\GreenEyeObjectDetection\\App\\GeneratedProjects\\UWP\\Unity.TextMeshPro\\Unity.TextMeshPro.csproj"
             },
-            "C:\\Users\\mahcl\\Documents\\cst_IB\\group-proj\\GreenEyes\\App\\GeneratedProjects\\UWP\\Unity.XR.WindowsMR\\Unity.XR.WindowsMR.csproj": {
-              "projectPath": "C:\\Users\\mahcl\\Documents\\cst_IB\\group-proj\\GreenEyes\\App\\GeneratedProjects\\UWP\\Unity.XR.WindowsMR\\Unity.XR.WindowsMR.csproj"
+            "D:\\yiyi\\Cambridge\\GreenEyeObjectDetection\\GreenEyeObjectDetection\\App\\GeneratedProjects\\UWP\\Unity.XR.WindowsMR\\Unity.XR.WindowsMR.csproj": {
+              "projectPath": "D:\\yiyi\\Cambridge\\GreenEyeObjectDetection\\GreenEyeObjectDetection\\App\\GeneratedProjects\\UWP\\Unity.XR.WindowsMR\\Unity.XR.WindowsMR.csproj"
             }
           }
         }

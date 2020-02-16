@@ -15992,19 +15992,19 @@
     "UAP,Version=v10.0.10240": []
   },
   "packageFolders": {
-    "C:\\Users\\mahcl\\.nuget\\packages\\": {}
+    "C:\\Users\\iihal\\.nuget\\packages\\": {}
   },
   "project": {
     "restore": {
-      "projectUniqueName": "C:\\Users\\mahcl\\Documents\\cst_IB\\group-proj\\GreenEyes\\App\\GeneratedProjects\\UWP\\Unity.Analytics.DataPrivacy\\Unity.Analytics.DataPrivacy.csproj",
+      "projectUniqueName": "D:\\yiyi\\Cambridge\\GreenEyeObjectDetection\\GreenEyeObjectDetection\\App\\GeneratedProjects\\UWP\\Unity.Analytics.DataPrivacy\\Unity.Analytics.DataPrivacy.csproj",
       "projectName": "Unity.Analytics.DataPrivacy",
-      "projectPath": "C:\\Users\\mahcl\\Documents\\cst_IB\\group-proj\\GreenEyes\\App\\GeneratedProjects\\UWP\\Unity.Analytics.DataPrivacy\\Unity.Analytics.DataPrivacy.csproj",
-      "projectJsonPath": "C:\\Users\\mahcl\\Documents\\cst_IB\\group-proj\\GreenEyes\\App\\GeneratedProjects\\UWP\\Unity.Analytics.DataPrivacy\\project.json",
-      "packagesPath": "C:\\Users\\mahcl\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\mahcl\\Documents\\cst_IB\\group-proj\\GreenEyes\\App\\GeneratedProjects\\UWP\\Unity.Analytics.DataPrivacy\\obj\\",
+      "projectPath": "D:\\yiyi\\Cambridge\\GreenEyeObjectDetection\\GreenEyeObjectDetection\\App\\GeneratedProjects\\UWP\\Unity.Analytics.DataPrivacy\\Unity.Analytics.DataPrivacy.csproj",
+      "projectJsonPath": "D:\\yiyi\\Cambridge\\GreenEyeObjectDetection\\GreenEyeObjectDetection\\App\\GeneratedProjects\\UWP\\Unity.Analytics.DataPrivacy\\project.json",
+      "packagesPath": "C:\\Users\\iihal\\.nuget\\packages\\",
+      "outputPath": "D:\\yiyi\\Cambridge\\GreenEyeObjectDetection\\GreenEyeObjectDetection\\App\\GeneratedProjects\\UWP\\Unity.Analytics.DataPrivacy\\obj\\",
       "projectStyle": "ProjectJson",
       "configFilePaths": [
-        "C:\\Users\\mahcl\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\iihal\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "sources": {
