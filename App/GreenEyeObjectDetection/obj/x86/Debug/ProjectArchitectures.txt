@@ -1,8 +1,0 @@
-D:\yiyi\Cambridge\GreenEyeObjectDetection\GreenEyeObjectDetection\App\GeneratedProjects\UWP\Assembly-CSharp\Assembly-CSharp.csproj;x86
-D:\yiyi\Cambridge\GreenEyeObjectDetection\GreenEyeObjectDetection\App\GeneratedProjects\UWP\Unity.Analytics.DataPrivacy\Unity.Analytics.DataPrivacy.csproj;x86
-D:\yiyi\Cambridge\GreenEyeObjectDetection\GreenEyeObjectDetection\App\GeneratedProjects\UWP\Unity.Analytics.DataPrivacy\Unity.Analytics.DataPrivacy.csproj;x86
-D:\yiyi\Cambridge\GreenEyeObjectDetection\GreenEyeObjectDetection\App\GeneratedProjects\UWP\Unity.TextMeshPro\Unity.TextMeshPro.csproj;x86
-D:\yiyi\Cambridge\GreenEyeObjectDetection\GreenEyeObjectDetection\App\GeneratedProjects\UWP\Unity.TextMeshPro\Unity.TextMeshPro.csproj;x86
-D:\yiyi\Cambridge\GreenEyeObjectDetection\GreenEyeObjectDetection\App\GeneratedProjects\UWP\Unity.XR.WindowsMR\Unity.XR.WindowsMR.csproj;x86
-D:\yiyi\Cambridge\GreenEyeObjectDetection\GreenEyeObjectDetection\App\GeneratedProjects\UWP\Unity.XR.WindowsMR\Unity.XR.WindowsMR.csproj;x86
-D:\yiyi\Cambridge\GreenEyeObjectDetection\GreenEyeObjectDetection\App\GreenEyeObjectDetection\GreenEyeObjectDetection.csproj;x86
