@@ -328,3 +328,4 @@ D:\yiyi\Cambridge\GreenEyeObjectDetection\GreenEyeObjectDetection\App\GreenEyeOb
 D:\yiyi\Cambridge\GreenEyeObjectDetection\GreenEyeObjectDetection\App\GreenEyeObjectDetection\obj\x86\Debug\ProjectArchitectures.txt
 D:\yiyi\Cambridge\GreenEyeObjectDetection\GreenEyeObjectDetection\App\GreenEyeObjectDetection\obj\x86\Debug\.winmd_cache\$BridgeInterface.winmd_637153785420000000.json
 D:\yiyi\Cambridge\GreenEyeObjectDetection\GreenEyeObjectDetection\App\GreenEyeObjectDetection\obj\x86\Debug\.winmd_cache\$UnityPlayer.winmd_637153785440000000.json
+C:\Users\piotr\Desktop\Piotr\studia-praca\GreenEyes\App\GreenEyeObjectDetection\obj\x86\Debug\GreenEyeObjectDetection.exe

@@ -15992,19 +15992,19 @@
     "UAP,Version=v10.0.10240": []
   },
   "packageFolders": {
-    "C:\\Users\\iihal\\.nuget\\packages\\": {}
+    "C:\\Users\\piotr\\.nuget\\packages\\": {}
   },
   "project": {
     "restore": {
-      "projectUniqueName": "D:\\yiyi\\Cambridge\\GreenEyeObjectDetection\\GreenEyeObjectDetection\\App\\GeneratedProjects\\UWP\\Unity.TextMeshPro\\Unity.TextMeshPro.csproj",
+      "projectUniqueName": "C:\\Users\\piotr\\Desktop\\Piotr\\studia-praca\\GreenEyes\\App\\GeneratedProjects\\UWP\\Unity.TextMeshPro\\Unity.TextMeshPro.csproj",
       "projectName": "Unity.TextMeshPro",
-      "projectPath": "D:\\yiyi\\Cambridge\\GreenEyeObjectDetection\\GreenEyeObjectDetection\\App\\GeneratedProjects\\UWP\\Unity.TextMeshPro\\Unity.TextMeshPro.csproj",
-      "projectJsonPath": "D:\\yiyi\\Cambridge\\GreenEyeObjectDetection\\GreenEyeObjectDetection\\App\\GeneratedProjects\\UWP\\Unity.TextMeshPro\\project.json",
-      "packagesPath": "C:\\Users\\iihal\\.nuget\\packages\\",
-      "outputPath": "D:\\yiyi\\Cambridge\\GreenEyeObjectDetection\\GreenEyeObjectDetection\\App\\GeneratedProjects\\UWP\\Unity.TextMeshPro\\obj\\",
+      "projectPath": "C:\\Users\\piotr\\Desktop\\Piotr\\studia-praca\\GreenEyes\\App\\GeneratedProjects\\UWP\\Unity.TextMeshPro\\Unity.TextMeshPro.csproj",
+      "projectJsonPath": "C:\\Users\\piotr\\Desktop\\Piotr\\studia-praca\\GreenEyes\\App\\GeneratedProjects\\UWP\\Unity.TextMeshPro\\project.json",
+      "packagesPath": "C:\\Users\\piotr\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\piotr\\Desktop\\Piotr\\studia-praca\\GreenEyes\\App\\GeneratedProjects\\UWP\\Unity.TextMeshPro\\obj\\",
       "projectStyle": "ProjectJson",
       "configFilePaths": [
-        "C:\\Users\\iihal\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\piotr\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "sources": {

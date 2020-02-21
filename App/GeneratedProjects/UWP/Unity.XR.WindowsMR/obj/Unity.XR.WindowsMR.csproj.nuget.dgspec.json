@@ -1,21 +1,21 @@
 {
   "format": 1,
   "restore": {
-    "D:\\yiyi\\Cambridge\\GreenEyeObjectDetection\\GreenEyeObjectDetection\\App\\GeneratedProjects\\UWP\\Unity.XR.WindowsMR\\Unity.XR.WindowsMR.csproj": {}
+    "C:\\Users\\piotr\\Desktop\\Piotr\\studia-praca\\GreenEyes\\App\\GeneratedProjects\\UWP\\Unity.XR.WindowsMR\\Unity.XR.WindowsMR.csproj": {}
   },
   "projects": {
-    "D:\\yiyi\\Cambridge\\GreenEyeObjectDetection\\GreenEyeObjectDetection\\App\\GeneratedProjects\\UWP\\Unity.XR.WindowsMR\\Unity.XR.WindowsMR.csproj": {
+    "C:\\Users\\piotr\\Desktop\\Piotr\\studia-praca\\GreenEyes\\App\\GeneratedProjects\\UWP\\Unity.XR.WindowsMR\\Unity.XR.WindowsMR.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\yiyi\\Cambridge\\GreenEyeObjectDetection\\GreenEyeObjectDetection\\App\\GeneratedProjects\\UWP\\Unity.XR.WindowsMR\\Unity.XR.WindowsMR.csproj",
+        "projectUniqueName": "C:\\Users\\piotr\\Desktop\\Piotr\\studia-praca\\GreenEyes\\App\\GeneratedProjects\\UWP\\Unity.XR.WindowsMR\\Unity.XR.WindowsMR.csproj",
         "projectName": "Unity.XR.WindowsMR",
-        "projectPath": "D:\\yiyi\\Cambridge\\GreenEyeObjectDetection\\GreenEyeObjectDetection\\App\\GeneratedProjects\\UWP\\Unity.XR.WindowsMR\\Unity.XR.WindowsMR.csproj",
-        "projectJsonPath": "D:\\yiyi\\Cambridge\\GreenEyeObjectDetection\\GreenEyeObjectDetection\\App\\GeneratedProjects\\UWP\\Unity.XR.WindowsMR\\project.json",
-        "packagesPath": "C:\\Users\\iihal\\.nuget\\packages\\",
-        "outputPath": "D:\\yiyi\\Cambridge\\GreenEyeObjectDetection\\GreenEyeObjectDetection\\App\\GeneratedProjects\\UWP\\Unity.XR.WindowsMR\\obj\\",
+        "projectPath": "C:\\Users\\piotr\\Desktop\\Piotr\\studia-praca\\GreenEyes\\App\\GeneratedProjects\\UWP\\Unity.XR.WindowsMR\\Unity.XR.WindowsMR.csproj",
+        "projectJsonPath": "C:\\Users\\piotr\\Desktop\\Piotr\\studia-praca\\GreenEyes\\App\\GeneratedProjects\\UWP\\Unity.XR.WindowsMR\\project.json",
+        "packagesPath": "C:\\Users\\piotr\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\piotr\\Desktop\\Piotr\\studia-praca\\GreenEyes\\App\\GeneratedProjects\\UWP\\Unity.XR.WindowsMR\\obj\\",
         "projectStyle": "ProjectJson",
         "configFilePaths": [
-          "C:\\Users\\iihal\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\piotr\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "sources": {

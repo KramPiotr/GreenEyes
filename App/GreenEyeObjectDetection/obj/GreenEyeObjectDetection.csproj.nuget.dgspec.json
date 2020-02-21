@@ -1,21 +1,21 @@
 {
   "format": 1,
   "restore": {
-    "D:\\yiyi\\Cambridge\\GreenEyeObjectDetection\\GreenEyeObjectDetection\\App\\GreenEyeObjectDetection\\GreenEyeObjectDetection.csproj": {}
+    "C:\\Users\\piotr\\Desktop\\Piotr\\studia-praca\\GreenEyes\\App\\GreenEyeObjectDetection\\GreenEyeObjectDetection.csproj": {}
   },
   "projects": {
-    "D:\\yiyi\\Cambridge\\GreenEyeObjectDetection\\GreenEyeObjectDetection\\App\\GeneratedProjects\\UWP\\Assembly-CSharp\\Assembly-CSharp.csproj": {
+    "C:\\Users\\piotr\\Desktop\\Piotr\\studia-praca\\GreenEyes\\App\\GeneratedProjects\\UWP\\Assembly-CSharp\\Assembly-CSharp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\yiyi\\Cambridge\\GreenEyeObjectDetection\\GreenEyeObjectDetection\\App\\GeneratedProjects\\UWP\\Assembly-CSharp\\Assembly-CSharp.csproj",
+        "projectUniqueName": "C:\\Users\\piotr\\Desktop\\Piotr\\studia-praca\\GreenEyes\\App\\GeneratedProjects\\UWP\\Assembly-CSharp\\Assembly-CSharp.csproj",
         "projectName": "Assembly-CSharp",
-        "projectPath": "D:\\yiyi\\Cambridge\\GreenEyeObjectDetection\\GreenEyeObjectDetection\\App\\GeneratedProjects\\UWP\\Assembly-CSharp\\Assembly-CSharp.csproj",
-        "projectJsonPath": "D:\\yiyi\\Cambridge\\GreenEyeObjectDetection\\GreenEyeObjectDetection\\App\\GeneratedProjects\\UWP\\Assembly-CSharp\\project.json",
-        "packagesPath": "C:\\Users\\iihal\\.nuget\\packages\\",
-        "outputPath": "D:\\yiyi\\Cambridge\\GreenEyeObjectDetection\\GreenEyeObjectDetection\\App\\GeneratedProjects\\UWP\\Assembly-CSharp\\obj\\",
+        "projectPath": "C:\\Users\\piotr\\Desktop\\Piotr\\studia-praca\\GreenEyes\\App\\GeneratedProjects\\UWP\\Assembly-CSharp\\Assembly-CSharp.csproj",
+        "projectJsonPath": "C:\\Users\\piotr\\Desktop\\Piotr\\studia-praca\\GreenEyes\\App\\GeneratedProjects\\UWP\\Assembly-CSharp\\project.json",
+        "packagesPath": "C:\\Users\\piotr\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\piotr\\Desktop\\Piotr\\studia-praca\\GreenEyes\\App\\GeneratedProjects\\UWP\\Assembly-CSharp\\obj\\",
         "projectStyle": "ProjectJson",
         "configFilePaths": [
-          "C:\\Users\\iihal\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\piotr\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "sources": {
@@ -25,14 +25,14 @@
         "frameworks": {
           "uap10.0.10240": {
             "projectReferences": {
-              "D:\\yiyi\\Cambridge\\GreenEyeObjectDetection\\GreenEyeObjectDetection\\App\\GeneratedProjects\\UWP\\Unity.Analytics.DataPrivacy\\Unity.Analytics.DataPrivacy.csproj": {
-                "projectPath": "D:\\yiyi\\Cambridge\\GreenEyeObjectDetection\\GreenEyeObjectDetection\\App\\GeneratedProjects\\UWP\\Unity.Analytics.DataPrivacy\\Unity.Analytics.DataPrivacy.csproj"
+              "C:\\Users\\piotr\\Desktop\\Piotr\\studia-praca\\GreenEyes\\App\\GeneratedProjects\\UWP\\Unity.Analytics.DataPrivacy\\Unity.Analytics.DataPrivacy.csproj": {
+                "projectPath": "C:\\Users\\piotr\\Desktop\\Piotr\\studia-praca\\GreenEyes\\App\\GeneratedProjects\\UWP\\Unity.Analytics.DataPrivacy\\Unity.Analytics.DataPrivacy.csproj"
               },
-              "D:\\yiyi\\Cambridge\\GreenEyeObjectDetection\\GreenEyeObjectDetection\\App\\GeneratedProjects\\UWP\\Unity.TextMeshPro\\Unity.TextMeshPro.csproj": {
-                "projectPath": "D:\\yiyi\\Cambridge\\GreenEyeObjectDetection\\GreenEyeObjectDetection\\App\\GeneratedProjects\\UWP\\Unity.TextMeshPro\\Unity.TextMeshPro.csproj"
+              "C:\\Users\\piotr\\Desktop\\Piotr\\studia-praca\\GreenEyes\\App\\GeneratedProjects\\UWP\\Unity.TextMeshPro\\Unity.TextMeshPro.csproj": {
+                "projectPath": "C:\\Users\\piotr\\Desktop\\Piotr\\studia-praca\\GreenEyes\\App\\GeneratedProjects\\UWP\\Unity.TextMeshPro\\Unity.TextMeshPro.csproj"
               },
-              "D:\\yiyi\\Cambridge\\GreenEyeObjectDetection\\GreenEyeObjectDetection\\App\\GeneratedProjects\\UWP\\Unity.XR.WindowsMR\\Unity.XR.WindowsMR.csproj": {
-                "projectPath": "D:\\yiyi\\Cambridge\\GreenEyeObjectDetection\\GreenEyeObjectDetection\\App\\GeneratedProjects\\UWP\\Unity.XR.WindowsMR\\Unity.XR.WindowsMR.csproj"
+              "C:\\Users\\piotr\\Desktop\\Piotr\\studia-praca\\GreenEyes\\App\\GeneratedProjects\\UWP\\Unity.XR.WindowsMR\\Unity.XR.WindowsMR.csproj": {
+                "projectPath": "C:\\Users\\piotr\\Desktop\\Piotr\\studia-praca\\GreenEyes\\App\\GeneratedProjects\\UWP\\Unity.XR.WindowsMR\\Unity.XR.WindowsMR.csproj"
               }
             }
           }
@@ -68,18 +68,18 @@
         }
       }
     },
-    "D:\\yiyi\\Cambridge\\GreenEyeObjectDetection\\GreenEyeObjectDetection\\App\\GeneratedProjects\\UWP\\Unity.Analytics.DataPrivacy\\Unity.Analytics.DataPrivacy.csproj": {
+    "C:\\Users\\piotr\\Desktop\\Piotr\\studia-praca\\GreenEyes\\App\\GeneratedProjects\\UWP\\Unity.Analytics.DataPrivacy\\Unity.Analytics.DataPrivacy.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\yiyi\\Cambridge\\GreenEyeObjectDetection\\GreenEyeObjectDetection\\App\\GeneratedProjects\\UWP\\Unity.Analytics.DataPrivacy\\Unity.Analytics.DataPrivacy.csproj",
+        "projectUniqueName": "C:\\Users\\piotr\\Desktop\\Piotr\\studia-praca\\GreenEyes\\App\\GeneratedProjects\\UWP\\Unity.Analytics.DataPrivacy\\Unity.Analytics.DataPrivacy.csproj",
         "projectName": "Unity.Analytics.DataPrivacy",
-        "projectPath": "D:\\yiyi\\Cambridge\\GreenEyeObjectDetection\\GreenEyeObjectDetection\\App\\GeneratedProjects\\UWP\\Unity.Analytics.DataPrivacy\\Unity.Analytics.DataPrivacy.csproj",
-        "projectJsonPath": "D:\\yiyi\\Cambridge\\GreenEyeObjectDetection\\GreenEyeObjectDetection\\App\\GeneratedProjects\\UWP\\Unity.Analytics.DataPrivacy\\project.json",
-        "packagesPath": "C:\\Users\\iihal\\.nuget\\packages\\",
-        "outputPath": "D:\\yiyi\\Cambridge\\GreenEyeObjectDetection\\GreenEyeObjectDetection\\App\\GeneratedProjects\\UWP\\Unity.Analytics.DataPrivacy\\obj\\",
+        "projectPath": "C:\\Users\\piotr\\Desktop\\Piotr\\studia-praca\\GreenEyes\\App\\GeneratedProjects\\UWP\\Unity.Analytics.DataPrivacy\\Unity.Analytics.DataPrivacy.csproj",
+        "projectJsonPath": "C:\\Users\\piotr\\Desktop\\Piotr\\studia-praca\\GreenEyes\\App\\GeneratedProjects\\UWP\\Unity.Analytics.DataPrivacy\\project.json",
+        "packagesPath": "C:\\Users\\piotr\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\piotr\\Desktop\\Piotr\\studia-praca\\GreenEyes\\App\\GeneratedProjects\\UWP\\Unity.Analytics.DataPrivacy\\obj\\",
         "projectStyle": "ProjectJson",
         "configFilePaths": [
-          "C:\\Users\\iihal\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\piotr\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "sources": {
@@ -117,18 +117,18 @@
         }
       }
     },
-    "D:\\yiyi\\Cambridge\\GreenEyeObjectDetection\\GreenEyeObjectDetection\\App\\GeneratedProjects\\UWP\\Unity.TextMeshPro\\Unity.TextMeshPro.csproj": {
+    "C:\\Users\\piotr\\Desktop\\Piotr\\studia-praca\\GreenEyes\\App\\GeneratedProjects\\UWP\\Unity.TextMeshPro\\Unity.TextMeshPro.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\yiyi\\Cambridge\\GreenEyeObjectDetection\\GreenEyeObjectDetection\\App\\GeneratedProjects\\UWP\\Unity.TextMeshPro\\Unity.TextMeshPro.csproj",
+        "projectUniqueName": "C:\\Users\\piotr\\Desktop\\Piotr\\studia-praca\\GreenEyes\\App\\GeneratedProjects\\UWP\\Unity.TextMeshPro\\Unity.TextMeshPro.csproj",
         "projectName": "Unity.TextMeshPro",
-        "projectPath": "D:\\yiyi\\Cambridge\\GreenEyeObjectDetection\\GreenEyeObjectDetection\\App\\GeneratedProjects\\UWP\\Unity.TextMeshPro\\Unity.TextMeshPro.csproj",
-        "projectJsonPath": "D:\\yiyi\\Cambridge\\GreenEyeObjectDetection\\GreenEyeObjectDetection\\App\\GeneratedProjects\\UWP\\Unity.TextMeshPro\\project.json",
-        "packagesPath": "C:\\Users\\iihal\\.nuget\\packages\\",
-        "outputPath": "D:\\yiyi\\Cambridge\\GreenEyeObjectDetection\\GreenEyeObjectDetection\\App\\GeneratedProjects\\UWP\\Unity.TextMeshPro\\obj\\",
+        "projectPath": "C:\\Users\\piotr\\Desktop\\Piotr\\studia-praca\\GreenEyes\\App\\GeneratedProjects\\UWP\\Unity.TextMeshPro\\Unity.TextMeshPro.csproj",
+        "projectJsonPath": "C:\\Users\\piotr\\Desktop\\Piotr\\studia-praca\\GreenEyes\\App\\GeneratedProjects\\UWP\\Unity.TextMeshPro\\project.json",
+        "packagesPath": "C:\\Users\\piotr\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\piotr\\Desktop\\Piotr\\studia-praca\\GreenEyes\\App\\GeneratedProjects\\UWP\\Unity.TextMeshPro\\obj\\",
         "projectStyle": "ProjectJson",
         "configFilePaths": [
-          "C:\\Users\\iihal\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\piotr\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "sources": {
@@ -166,18 +166,18 @@
         }
       }
     },
-    "D:\\yiyi\\Cambridge\\GreenEyeObjectDetection\\GreenEyeObjectDetection\\App\\GeneratedProjects\\UWP\\Unity.XR.WindowsMR\\Unity.XR.WindowsMR.csproj": {
+    "C:\\Users\\piotr\\Desktop\\Piotr\\studia-praca\\GreenEyes\\App\\GeneratedProjects\\UWP\\Unity.XR.WindowsMR\\Unity.XR.WindowsMR.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\yiyi\\Cambridge\\GreenEyeObjectDetection\\GreenEyeObjectDetection\\App\\GeneratedProjects\\UWP\\Unity.XR.WindowsMR\\Unity.XR.WindowsMR.csproj",
+        "projectUniqueName": "C:\\Users\\piotr\\Desktop\\Piotr\\studia-praca\\GreenEyes\\App\\GeneratedProjects\\UWP\\Unity.XR.WindowsMR\\Unity.XR.WindowsMR.csproj",
         "projectName": "Unity.XR.WindowsMR",
-        "projectPath": "D:\\yiyi\\Cambridge\\GreenEyeObjectDetection\\GreenEyeObjectDetection\\App\\GeneratedProjects\\UWP\\Unity.XR.WindowsMR\\Unity.XR.WindowsMR.csproj",
-        "projectJsonPath": "D:\\yiyi\\Cambridge\\GreenEyeObjectDetection\\GreenEyeObjectDetection\\App\\GeneratedProjects\\UWP\\Unity.XR.WindowsMR\\project.json",
-        "packagesPath": "C:\\Users\\iihal\\.nuget\\packages\\",
-        "outputPath": "D:\\yiyi\\Cambridge\\GreenEyeObjectDetection\\GreenEyeObjectDetection\\App\\GeneratedProjects\\UWP\\Unity.XR.WindowsMR\\obj\\",
+        "projectPath": "C:\\Users\\piotr\\Desktop\\Piotr\\studia-praca\\GreenEyes\\App\\GeneratedProjects\\UWP\\Unity.XR.WindowsMR\\Unity.XR.WindowsMR.csproj",
+        "projectJsonPath": "C:\\Users\\piotr\\Desktop\\Piotr\\studia-praca\\GreenEyes\\App\\GeneratedProjects\\UWP\\Unity.XR.WindowsMR\\project.json",
+        "packagesPath": "C:\\Users\\piotr\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\piotr\\Desktop\\Piotr\\studia-praca\\GreenEyes\\App\\GeneratedProjects\\UWP\\Unity.XR.WindowsMR\\obj\\",
         "projectStyle": "ProjectJson",
         "configFilePaths": [
-          "C:\\Users\\iihal\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\piotr\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "sources": {
@@ -215,18 +215,18 @@
         }
       }
     },
-    "D:\\yiyi\\Cambridge\\GreenEyeObjectDetection\\GreenEyeObjectDetection\\App\\GreenEyeObjectDetection\\GreenEyeObjectDetection.csproj": {
+    "C:\\Users\\piotr\\Desktop\\Piotr\\studia-praca\\GreenEyes\\App\\GreenEyeObjectDetection\\GreenEyeObjectDetection.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\yiyi\\Cambridge\\GreenEyeObjectDetection\\GreenEyeObjectDetection\\App\\GreenEyeObjectDetection\\GreenEyeObjectDetection.csproj",
+        "projectUniqueName": "C:\\Users\\piotr\\Desktop\\Piotr\\studia-praca\\GreenEyes\\App\\GreenEyeObjectDetection\\GreenEyeObjectDetection.csproj",
         "projectName": "GreenEyeObjectDetection",
-        "projectPath": "D:\\yiyi\\Cambridge\\GreenEyeObjectDetection\\GreenEyeObjectDetection\\App\\GreenEyeObjectDetection\\GreenEyeObjectDetection.csproj",
-        "projectJsonPath": "D:\\yiyi\\Cambridge\\GreenEyeObjectDetection\\GreenEyeObjectDetection\\App\\GreenEyeObjectDetection\\project.json",
-        "packagesPath": "C:\\Users\\iihal\\.nuget\\packages\\",
-        "outputPath": "D:\\yiyi\\Cambridge\\GreenEyeObjectDetection\\GreenEyeObjectDetection\\App\\GreenEyeObjectDetection\\obj\\",
+        "projectPath": "C:\\Users\\piotr\\Desktop\\Piotr\\studia-praca\\GreenEyes\\App\\GreenEyeObjectDetection\\GreenEyeObjectDetection.csproj",
+        "projectJsonPath": "C:\\Users\\piotr\\Desktop\\Piotr\\studia-praca\\GreenEyes\\App\\GreenEyeObjectDetection\\project.json",
+        "packagesPath": "C:\\Users\\piotr\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\piotr\\Desktop\\Piotr\\studia-praca\\GreenEyes\\App\\GreenEyeObjectDetection\\obj\\",
         "projectStyle": "ProjectJson",
         "configFilePaths": [
-          "C:\\Users\\iihal\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\piotr\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "sources": {
@@ -236,17 +236,17 @@
         "frameworks": {
           "uap10.0.10240": {
             "projectReferences": {
-              "D:\\yiyi\\Cambridge\\GreenEyeObjectDetection\\GreenEyeObjectDetection\\App\\GeneratedProjects\\UWP\\Assembly-CSharp\\Assembly-CSharp.csproj": {
-                "projectPath": "D:\\yiyi\\Cambridge\\GreenEyeObjectDetection\\GreenEyeObjectDetection\\App\\GeneratedProjects\\UWP\\Assembly-CSharp\\Assembly-CSharp.csproj"
+              "C:\\Users\\piotr\\Desktop\\Piotr\\studia-praca\\GreenEyes\\App\\GeneratedProjects\\UWP\\Assembly-CSharp\\Assembly-CSharp.csproj": {
+                "projectPath": "C:\\Users\\piotr\\Desktop\\Piotr\\studia-praca\\GreenEyes\\App\\GeneratedProjects\\UWP\\Assembly-CSharp\\Assembly-CSharp.csproj"
               },
-              "D:\\yiyi\\Cambridge\\GreenEyeObjectDetection\\GreenEyeObjectDetection\\App\\GeneratedProjects\\UWP\\Unity.Analytics.DataPrivacy\\Unity.Analytics.DataPrivacy.csproj": {
-                "projectPath": "D:\\yiyi\\Cambridge\\GreenEyeObjectDetection\\GreenEyeObjectDetection\\App\\GeneratedProjects\\UWP\\Unity.Analytics.DataPrivacy\\Unity.Analytics.DataPrivacy.csproj"
+              "C:\\Users\\piotr\\Desktop\\Piotr\\studia-praca\\GreenEyes\\App\\GeneratedProjects\\UWP\\Unity.Analytics.DataPrivacy\\Unity.Analytics.DataPrivacy.csproj": {
+                "projectPath": "C:\\Users\\piotr\\Desktop\\Piotr\\studia-praca\\GreenEyes\\App\\GeneratedProjects\\UWP\\Unity.Analytics.DataPrivacy\\Unity.Analytics.DataPrivacy.csproj"
               },
-              "D:\\yiyi\\Cambridge\\GreenEyeObjectDetection\\GreenEyeObjectDetection\\App\\GeneratedProjects\\UWP\\Unity.TextMeshPro\\Unity.TextMeshPro.csproj": {
-                "projectPath": "D:\\yiyi\\Cambridge\\GreenEyeObjectDetection\\GreenEyeObjectDetection\\App\\GeneratedProjects\\UWP\\Unity.TextMeshPro\\Unity.TextMeshPro.csproj"
+              "C:\\Users\\piotr\\Desktop\\Piotr\\studia-praca\\GreenEyes\\App\\GeneratedProjects\\UWP\\Unity.TextMeshPro\\Unity.TextMeshPro.csproj": {
+                "projectPath": "C:\\Users\\piotr\\Desktop\\Piotr\\studia-praca\\GreenEyes\\App\\GeneratedProjects\\UWP\\Unity.TextMeshPro\\Unity.TextMeshPro.csproj"
               },
-              "D:\\yiyi\\Cambridge\\GreenEyeObjectDetection\\GreenEyeObjectDetection\\App\\GeneratedProjects\\UWP\\Unity.XR.WindowsMR\\Unity.XR.WindowsMR.csproj": {
-                "projectPath": "D:\\yiyi\\Cambridge\\GreenEyeObjectDetection\\GreenEyeObjectDetection\\App\\GeneratedProjects\\UWP\\Unity.XR.WindowsMR\\Unity.XR.WindowsMR.csproj"
+              "C:\\Users\\piotr\\Desktop\\Piotr\\studia-praca\\GreenEyes\\App\\GeneratedProjects\\UWP\\Unity.XR.WindowsMR\\Unity.XR.WindowsMR.csproj": {
+                "projectPath": "C:\\Users\\piotr\\Desktop\\Piotr\\studia-praca\\GreenEyes\\App\\GeneratedProjects\\UWP\\Unity.XR.WindowsMR\\Unity.XR.WindowsMR.csproj"
               }
             }
           }

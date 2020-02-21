@@ -20,7 +20,8 @@ public class CustomVisionAnalyser : MonoBehaviour
     /// <summary>
     /// Insert your prediction endpoint here
     /// </summary>
-    private string predictionEndpoint = "https://southcentralus.api.cognitive.microsoft.com/customvision/v3.0/Prediction/f88eff33-dc95-49e5-a06e-a6d27ac38909/detect/iterations/Iteration1/image";
+    /// Oh nice!
+    private string predictionEndpoint = "https://southcentralus.api.cognitive.microsoft.com/customvision/v3.0/Prediction/f88eff33-dc95-49e5-a06e-a6d27ac38909/detect/iterations/Iteration2/image";
 
     /// <summary>
     /// Bite array of the image to submit for analysis
@@ -78,6 +79,16 @@ public class CustomVisionAnalyser : MonoBehaviour
             analysisRootObject = JsonConvert.DeserializeObject<AnalysisRootObject>(jsonResponse);
 
             SceneOrganiser.Instance.FinaliseLabel(analysisRootObject);
+            for(int i = 0; i<analysisRootObject.predictions.Count; i++)
+            {
+                Debug.Log("Prediction " + (i + 1) + " in this frame: " + analysisRootObject.predictions[i].probability 
+                        + " for object " + analysisRootObject.predictions[i].tagName + " in the bounding box of data "
+                        + " left: " + analysisRootObject.predictions[i].boundingBox.left
+                        + " top: " + analysisRootObject.predictions[i].boundingBox.top
+                        + " width: " + analysisRootObject.predictions[i].boundingBox.width
+                        + " height: " + analysisRootObject.predictions[i].boundingBox.height);
+            }
+            
         }
     }
 
