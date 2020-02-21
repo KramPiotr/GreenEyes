@@ -6,10 +6,9 @@ using TMPro;
 
 public class EnvironmentData : MonoBehaviour
 {
-    // Start is called before the first frame update
-
     Dictionary<string, string> dataMap = new Dictionary<string, string>();
 
+    // Start is called before the first frame update
     void Start()
     {
         TextAsset asset = Resources.Load<TextAsset>("Data/ObjectData");
