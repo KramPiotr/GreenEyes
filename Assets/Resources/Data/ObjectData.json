@@ -1,5 +1,6 @@
 {
     "objects" : [
-        {"name" : "cube", "data" : "Requires the lives of 3 polar bears to make"}
+        {"name" : "cup", "data" : "Probably ceramic. Might be responsible for global warming."},
+        {"name" : "water bottle", "data" : "Contains water stolen from nature, causing draught for millions of species."}
     ]
 }

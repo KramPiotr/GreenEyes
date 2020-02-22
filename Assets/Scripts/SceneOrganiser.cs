@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
+using UnityEngine.UI;
+using TMPro;
 
 public class SceneOrganiser : MonoBehaviour
 {
@@ -20,6 +22,9 @@ public class SceneOrganiser : MonoBehaviour
     /// </summary>
     public GameObject label;
 
+    [SerializeField]
+    private GameObject dataPanelPrefab;
+
     /// <summary>
     /// Reference to the last Label positioned
     /// </summary>
@@ -34,7 +39,7 @@ public class SceneOrganiser : MonoBehaviour
     /// Current threshold accepted for displaying the label
     /// Reduce this value to display the recognition more often
     /// </summary>
-    internal float probabilityThreshold = 0.8f;
+    internal float probabilityThreshold = 0.5f;
 
     /// <summary>
     /// The quad object hosting the imposed image captured
@@ -73,7 +78,7 @@ public class SceneOrganiser : MonoBehaviour
     {
         lastLabelPlaced = Instantiate(label.transform, cursor.transform.position, transform.rotation);
         lastLabelPlacedText = lastLabelPlaced.GetComponent<TextMesh>();
-        lastLabelPlacedText.text = "";
+        lastLabelPlacedText.text = "Loading...";
         lastLabelPlaced.transform.localScale = new Vector3(0.005f, 0.005f, 0.005f);
 
         // Create a GameObject to which the texture can be applied
@@ -104,7 +109,7 @@ public class SceneOrganiser : MonoBehaviour
     /// </summary>
     public void FinaliseLabel(AnalysisRootObject analysisObject)
     {
-        if (analysisObject.predictions != null)
+        if (analysisObject != null && analysisObject.predictions != null)
         {
             lastLabelPlacedText = lastLabelPlaced.GetComponent<TextMesh>();
             // Sort the predictions to locate the highest one
@@ -121,10 +126,13 @@ public class SceneOrganiser : MonoBehaviour
                 // Position the label as close as possible to the Bounding Box of the prediction 
                 // At this point it will not consider depth
                 lastLabelPlaced.transform.parent = quad.transform;
-                lastLabelPlaced.transform.localPosition = CalculateBoundingBoxPosition(quadBounds, bestPrediction.boundingBox);
+                Vector3 labelPosition = CalculateBoundingBoxPosition(quadBounds, bestPrediction.boundingBox);
+                lastLabelPlaced.transform.localPosition = labelPosition;
 
                 // Set the tag text
-                lastLabelPlacedText.text = bestPrediction.tagName;
+                lastLabelPlacedText.text = "";//bestPrediction.tagName;
+                makeDataPanel(bestPrediction.tagName, new EnvironmentData().getObjectData(bestPrediction.tagName), cursor.transform.position, transform.rotation);
+
 
                 // Cast a ray from the user's head to the currently placed label, it should hit the object detected by the Service.
                 // At that point it will reposition the label where the ray HL sensor collides with the object,
@@ -137,6 +145,8 @@ public class SceneOrganiser : MonoBehaviour
                 {
                     lastLabelPlaced.position = objHitInfo.point;
                 }
+            } else {
+                lastLabelPlacedText.text = "";
             }
         }
         // Reset the color of the cursor
@@ -167,5 +177,19 @@ public class SceneOrganiser : MonoBehaviour
         double normalisedPos_Y = (quadHeight * centerFromTop) - (quadHeight / 2);
 
         return new Vector3((float)normalisedPos_X, (float)normalisedPos_Y, 0);
+    }
+
+    private void makeDataPanel(string title, string data, Vector3 position, Quaternion rotation) {
+        GameObject dataPanel = GameObject.Instantiate(dataPanelPrefab, position, rotation);
+
+        dataPanel.transform.localPosition = position;
+
+        Transform titleLbl = dataPanel.transform.Find("Title");
+        TextMeshProUGUI titleMesh = titleLbl.GetComponent<TextMeshProUGUI>();
+        titleMesh.text = title;
+
+        Transform descriptionLbl = dataPanel.transform.Find("Description");
+        TextMeshProUGUI descriptionMesh = descriptionLbl.GetComponent<TextMeshProUGUI>();
+        descriptionMesh.text = data;
     }
 }

@@ -9,23 +9,25 @@ public class EnvironmentData : MonoBehaviour
     Dictionary<string, string> dataMap = new Dictionary<string, string>();
 
     // Start is called before the first frame update
-    void Start()
-    {
+
+    public EnvironmentData() {
+        Debug.Log("Let's get data'd");
+
         TextAsset asset = Resources.Load<TextAsset>("Data/ObjectData");
-        string txt = asset.text;
-        
-        //ObjectDataCollection objCollection = JsonUtility.FromJson<ObjectDataCollection>(txt);
-        ObjectData[] objectDatas = getJsonArray<ObjectData>(txt);//objCollection.objectDatas;
+        ObjectData[] objectDatas = getJsonArray<ObjectData>(asset.text);
         foreach (ObjectData data in objectDatas) {
             dataMap.Add(data.name.ToLower(), data.data);
+            Debug.Log("Added data: <" + data.name.ToLower() + ">");
         }
-
-        TextMeshProUGUI textObj = GameObject.Find("Canvas/EnvironmentDataText").GetComponent<TextMeshProUGUI>();
-        textObj.text = "Cube:\n" + getObjectData("Cube");
     }
 
-    string getObjectData(string objectName)
+    void Start()
     {
+    }
+
+    public string getObjectData(string objectName)
+    {
+        Debug.Log("Request for: <" + objectName.ToLower() + ">");
         return dataMap[objectName.ToLower()];
     }
 
