@@ -14,7 +14,7 @@ public class EnvironmentData : MonoBehaviour
         Debug.Log("Let's get data'd");
 
         TextAsset asset = Resources.Load<TextAsset>("Data/ObjectData");
-        ObjectData[] objectDatas = getJsonArray<ObjectData>(asset.text);
+        ObjectData[] objectDatas = getJsonArray(asset.text);
         foreach (ObjectData data in objectDatas) {
             dataMap.Add(data.name.ToLower(), data.data);
             Debug.Log("Added data: <" + data.name.ToLower() + ">");
@@ -37,17 +37,17 @@ public class EnvironmentData : MonoBehaviour
         
     }
 
-    public static T[] getJsonArray<T>(string json)
+    private static ObjectData[] getJsonArray(string json)
     {
         //string newJson = "{ \"array\": " + json + "}";
-        Wrapper<T> wrapper = JsonUtility.FromJson<Wrapper<T>> (json);
+        Wrapper wrapper = JsonUtility.FromJson<Wrapper>(json);
         return wrapper.objects;
     }
  
     [System.Serializable]
-    private class Wrapper<T>
+    private class Wrapper
     {
-        public T[] objects;
+        public ObjectData[] objects;
     }
 
     [System.Serializable]
