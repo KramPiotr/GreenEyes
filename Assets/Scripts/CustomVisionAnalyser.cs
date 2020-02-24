@@ -21,7 +21,7 @@ public class CustomVisionAnalyser : MonoBehaviour
     /// Insert your prediction endpoint here
     /// </summary>
     /// Oh nice!
-    private string predictionEndpoint = "https://southcentralus.api.cognitive.microsoft.com/customvision/v3.0/Prediction/f88eff33-dc95-49e5-a06e-a6d27ac38909/detect/iterations/Iteration2/image";
+    private string predictionEndpoint = "https://southcentralus.api.cognitive.microsoft.com/customvision/v3.0/Prediction/f88eff33-dc95-49e5-a06e-a6d27ac38909/detect/iterations/Iteration3/image";
 
     /// <summary>
     /// Bite array of the image to submit for analysis
