@@ -110,7 +110,7 @@ public class ImageCapture : MonoBehaviour
 
             CameraParameters camParameters = new CameraParameters
             {
-                hologramOpacity = 1.0f,
+                hologramOpacity = 0.0f,
                 cameraResolutionWidth = targetTexture.width,
                 cameraResolutionHeight = targetTexture.height,
                 pixelFormat = CapturePixelFormat.BGRA32

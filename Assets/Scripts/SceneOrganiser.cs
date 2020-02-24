@@ -39,7 +39,7 @@ public class SceneOrganiser : MonoBehaviour
     /// Current threshold accepted for displaying the label
     /// Reduce this value to display the recognition more often
     /// </summary>
-    internal float probabilityThreshold = 0.5f;
+    internal float probabilityThreshold = 0.75f;
 
     /// <summary>
     /// The quad object hosting the imposed image captured
@@ -50,6 +50,12 @@ public class SceneOrganiser : MonoBehaviour
     /// Renderer of the quad object
     /// </summary>
     internal Renderer quadRenderer;
+
+    private Vector3 latestDataPanelPosition;
+    private Quaternion latestDataPanelRotation;
+
+    private Vector3 captureTimeHeadPosition;
+    private LayerMask captureTimeRaycastMask;
 
     // Start is called before the first frame update
 
@@ -81,6 +87,9 @@ public class SceneOrganiser : MonoBehaviour
         lastLabelPlacedText.text = "Loading...";
         lastLabelPlaced.transform.localScale = new Vector3(0.005f, 0.005f, 0.005f);
 
+        latestDataPanelPosition = cursor.transform.position;
+        latestDataPanelRotation = transform.rotation;
+
         // Create a GameObject to which the texture can be applied
         quad = GameObject.CreatePrimitive(PrimitiveType.Quad);
         quadRenderer = quad.GetComponent<Renderer>() as Renderer;
@@ -88,7 +97,7 @@ public class SceneOrganiser : MonoBehaviour
         quadRenderer.material = m;
 
         // Here you can set the transparency of the quad. Useful for debugging
-        float transparency = 0f;
+        float transparency = 0.0f;
         quadRenderer.material.color = new Color(1, 1, 1, transparency);
 
         // Set the position and scale of the quad depending on user position
@@ -102,6 +111,9 @@ public class SceneOrganiser : MonoBehaviour
         // to allow the image on the quad to be as precisely imposed to the real world as possible
         quad.transform.localScale = new Vector3(3f, 1.65f, 1f);
         quad.transform.parent = null;
+
+        captureTimeHeadPosition = Camera.main.transform.position;
+        captureTimeRaycastMask = SpatialMapping.PhysicsRaycastMask;
     }
 
     /// <summary>
@@ -131,7 +143,6 @@ public class SceneOrganiser : MonoBehaviour
 
                 // Set the tag text
                 lastLabelPlacedText.text = "";//bestPrediction.tagName;
-                makeDataPanel(bestPrediction.tagName, new EnvironmentData().getObjectData(bestPrediction.tagName), cursor.transform.position, transform.rotation);
 
 
                 // Cast a ray from the user's head to the currently placed label, it should hit the object detected by the Service.
@@ -141,10 +152,13 @@ public class SceneOrganiser : MonoBehaviour
                 Vector3 headPosition = Camera.main.transform.position;
                 RaycastHit objHitInfo;
                 Vector3 objDirection = lastLabelPlaced.position;
-                if (Physics.Raycast(headPosition, objDirection, out objHitInfo, 30.0f, SpatialMapping.PhysicsRaycastMask))
+                
+                if (Physics.Raycast(captureTimeHeadPosition, objDirection, out objHitInfo, 30.0f, captureTimeRaycastMask))
                 {
                     lastLabelPlaced.position = objHitInfo.point;
+                    latestDataPanelPosition = objHitInfo.point;
                 }
+                makeDataPanel(bestPrediction.tagName, new EnvironmentData().getObjectData(bestPrediction.tagName) + "\n" + bestPrediction.probability, latestDataPanelPosition, latestDataPanelRotation);
             } else {
                 lastLabelPlacedText.text = "";
             }
@@ -184,11 +198,13 @@ public class SceneOrganiser : MonoBehaviour
 
         dataPanel.transform.localPosition = position;
 
-        Transform titleLbl = dataPanel.transform.Find("Title");
+        Transform window = dataPanel.transform.Find("SF Window");
+
+        Transform titleLbl = window.Find("Title");
         TextMeshProUGUI titleMesh = titleLbl.GetComponent<TextMeshProUGUI>();
         titleMesh.text = title;
 
-        Transform descriptionLbl = dataPanel.transform.Find("Description");
+        Transform descriptionLbl = window.Find("Description");
         TextMeshProUGUI descriptionMesh = descriptionLbl.GetComponent<TextMeshProUGUI>();
         descriptionMesh.text = data;
     }
