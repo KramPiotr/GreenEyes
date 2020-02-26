@@ -6,7 +6,7 @@ using TMPro;
 
 public class EnvironmentData : MonoBehaviour
 {
-    Dictionary<string, string> dataMap = new Dictionary<string, string>();
+    Dictionary<string, ObjectData> dataMap = new Dictionary<string, ObjectData>();
 
     // Start is called before the first frame update
 
@@ -16,18 +16,16 @@ public class EnvironmentData : MonoBehaviour
         TextAsset asset = Resources.Load<TextAsset>("Data/ObjectData");
         ObjectData[] objectDatas = getJsonArray(asset.text);
         foreach (ObjectData data in objectDatas) {
-            dataMap.Add(data.name.ToLower(), data.data);
-            Debug.Log("Added data: <" + data.name.ToLower() + ">");
+            dataMap.Add(data.name.ToLower(), data);
         }
     }
 
-    void Start()
+    public ObjectData getObjectData(string objectName)
     {
-    }
-
-    public string getObjectData(string objectName)
-    {
-        Debug.Log("Request for: <" + objectName.ToLower() + ">");
+        if (!dataMap.ContainsKey(objectName.ToLower()))
+        {
+            return new ObjectData(objectName, "No data found");
+        }
         return dataMap[objectName.ToLower()];
     }
 
@@ -51,9 +49,18 @@ public class EnvironmentData : MonoBehaviour
     }
 
     [System.Serializable]
-    class ObjectData
+    public class ObjectData
     {
         public string name;
-        public string data;
+        public string ClimateChange;
+        public string LandUse;
+        public string WaterUse;
+        public double probability;
+
+        public ObjectData(string name, string text)
+        {
+            this.name = name;
+            this.ClimateChange = text;
+        }
     }
 }

@@ -1,9 +1,10 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
-using UnityEngine.UI;
 using TMPro;
+using static EnvironmentData;
+using System.Threading;
+using System.Collections;
 
 public class SceneOrganiser : MonoBehaviour
 {
@@ -39,7 +40,7 @@ public class SceneOrganiser : MonoBehaviour
     /// Current threshold accepted for displaying the label
     /// Reduce this value to display the recognition more often
     /// </summary>
-    internal float probabilityThreshold = 0.75f;
+    internal float probabilityThreshold = 0.5f;
 
     /// <summary>
     /// The quad object hosting the imposed image captured
@@ -128,7 +129,14 @@ public class SceneOrganiser : MonoBehaviour
             List<Prediction> sortedPredictions = new List<Prediction>();
             sortedPredictions = analysisObject.predictions.OrderBy(p => p.probability).ToList();
             Prediction bestPrediction = new Prediction();
-            bestPrediction = sortedPredictions[sortedPredictions.Count - 1];
+
+            if (sortedPredictions.Count > 0)
+            {
+                bestPrediction = sortedPredictions[sortedPredictions.Count - 1];
+            } else
+            {
+                bestPrediction.probability = 0;
+            }
 
             if (bestPrediction.probability > probabilityThreshold)
             {
@@ -158,16 +166,29 @@ public class SceneOrganiser : MonoBehaviour
                     lastLabelPlaced.position = objHitInfo.point;
                     latestDataPanelPosition = objHitInfo.point;
                 }
-                makeDataPanel(bestPrediction.tagName, new EnvironmentData().getObjectData(bestPrediction.tagName) + "\n" + bestPrediction.probability, latestDataPanelPosition, latestDataPanelRotation);
+
+                ObjectData data = new EnvironmentData().getObjectData(bestPrediction.tagName);
+                data.probability = bestPrediction.probability;
+                makeDataPanel(data, latestDataPanelPosition, latestDataPanelRotation);
             } else {
-                lastLabelPlacedText.text = "";
+                lastLabelPlacedText.text = "Failed";
+
+                IEnumerator coroutine = ResetText(lastLabelPlacedText, 5.0f);
+                StartCoroutine(coroutine);
             }
         }
+
         // Reset the color of the cursor
         cursor.GetComponent<Renderer>().material.color = Color.green;
 
         // Stop the analysis process
         ImageCapture.Instance.ResetImageCapture();
+    }
+
+    private IEnumerator ResetText(TextMesh label, float waitTime)
+    {
+        yield return new WaitForSeconds(waitTime);
+        label.text = "";
     }
 
     /// <summary>
@@ -193,7 +214,7 @@ public class SceneOrganiser : MonoBehaviour
         return new Vector3((float)normalisedPos_X, (float)normalisedPos_Y, 0);
     }
 
-    private void makeDataPanel(string title, string data, Vector3 position, Quaternion rotation) {
+    private void makeDataPanel(ObjectData data, Vector3 position, Quaternion rotation) {
         GameObject dataPanel = GameObject.Instantiate(dataPanelPrefab, position, rotation);
 
         dataPanel.transform.localPosition = position;
@@ -202,10 +223,13 @@ public class SceneOrganiser : MonoBehaviour
 
         Transform titleLbl = window.Find("Title");
         TextMeshProUGUI titleMesh = titleLbl.GetComponent<TextMeshProUGUI>();
-        titleMesh.text = title;
+        titleMesh.text = data.name;
 
         Transform descriptionLbl = window.Find("Description");
         TextMeshProUGUI descriptionMesh = descriptionLbl.GetComponent<TextMeshProUGUI>();
-        descriptionMesh.text = data;
+        descriptionMesh.text = "Climate Change: " + data.ClimateChange
+            + "\nLand Use: " + data.LandUse
+            + "\nWater Use: " + data.WaterUse
+            + "\nProb: " + data.probability;
     }
 }
