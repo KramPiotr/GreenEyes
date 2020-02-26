@@ -21,7 +21,7 @@ public class CustomVisionAnalyser : MonoBehaviour
     /// Insert your prediction endpoint here
     /// </summary>
     /// Oh nice!
-    private string predictionEndpoint = "https://southcentralus.api.cognitive.microsoft.com/customvision/v3.0/Prediction/f88eff33-dc95-49e5-a06e-a6d27ac38909/detect/iterations/Iteration3/image";
+    private string predictionEndpoint = "https://southcentralus.api.cognitive.microsoft.com/customvision/v3.0/Prediction/f88eff33-dc95-49e5-a06e-a6d27ac38909/detect/iterations/Iteration5/image";
 
     /// <summary>
     /// Bite array of the image to submit for analysis
@@ -48,6 +48,9 @@ public class CustomVisionAnalyser : MonoBehaviour
 
         using (UnityWebRequest unityWebRequest = UnityWebRequest.Post(predictionEndpoint, webForm))
         {
+            System.Diagnostics.Stopwatch sw = new System.Diagnostics.Stopwatch();
+            sw.Start();
+
             // Gets a byte array out of the saved image
             imageBytes = GetImageAsByteArray(imagePath);
 
@@ -61,8 +64,12 @@ public class CustomVisionAnalyser : MonoBehaviour
             // The download handler will help receiving the analysis from Azure
             unityWebRequest.downloadHandler = new DownloadHandlerBuffer();
 
+            Debug.Log("Time 0 : " + sw.Elapsed);
+
             // Send the request
             yield return unityWebRequest.SendWebRequest();
+            
+            Debug.Log("Time 1 : " + sw.Elapsed);
 
             string jsonResponse = unityWebRequest.downloadHandler.text;
 
@@ -70,13 +77,18 @@ public class CustomVisionAnalyser : MonoBehaviour
 
             // Create a texture. Texture size does not matter, since
             // LoadImage will replace with the incoming image size.
+            Debug.Log("Time 2 : " + sw.Elapsed);
             Texture2D tex = new Texture2D(1, 1);
             tex.LoadImage(imageBytes);
+            Debug.Log("Time 3 : " + sw.Elapsed);
             SceneOrganiser.Instance.quadRenderer.material.SetTexture("_MainTex", tex);
+            Debug.Log("Time 4 : " + sw.Elapsed);
 
             // The response will be in JSON format, therefore it needs to be deserialized
             AnalysisRootObject analysisRootObject = new AnalysisRootObject();
             analysisRootObject = JsonConvert.DeserializeObject<AnalysisRootObject>(jsonResponse);
+            
+            Debug.Log("Time 5 : " + sw.Elapsed);
 
             SceneOrganiser.Instance.FinaliseLabel(analysisRootObject);
             for(int i = 0; i<analysisRootObject.predictions.Count; i++)
@@ -89,6 +101,7 @@ public class CustomVisionAnalyser : MonoBehaviour
                         + " height: " + analysisRootObject.predictions[i].boundingBox.height);
             }
             
+            sw.Stop();
         }
     }
 

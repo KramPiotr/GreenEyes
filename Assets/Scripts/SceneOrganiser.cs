@@ -169,7 +169,7 @@ public class SceneOrganiser : MonoBehaviour
 
                 ObjectData data = new EnvironmentData().getObjectData(bestPrediction.tagName);
                 data.probability = bestPrediction.probability;
-                makeDataPanel(data, latestDataPanelPosition, latestDataPanelRotation);
+                StartCoroutine(makeDataPanel(data, latestDataPanelPosition, latestDataPanelRotation));
             } else {
                 lastLabelPlacedText.text = "Failed";
 
@@ -214,7 +214,9 @@ public class SceneOrganiser : MonoBehaviour
         return new Vector3((float)normalisedPos_X, (float)normalisedPos_Y, 0);
     }
 
-    private void makeDataPanel(ObjectData data, Vector3 position, Quaternion rotation) {
+    private IEnumerator makeDataPanel(ObjectData data, Vector3 position, Quaternion rotation) {
+        yield return new WaitForSeconds(0);
+
         GameObject dataPanel = GameObject.Instantiate(dataPanelPrefab, position, rotation);
 
         dataPanel.transform.localPosition = position;
