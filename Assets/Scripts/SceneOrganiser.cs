@@ -25,6 +25,8 @@ public class SceneOrganiser : MonoBehaviour
 
     [SerializeField]
     private GameObject dataPanelPrefab;
+    [SerializeField]
+    private GameObject loadingIconPrefab;
 
     /// <summary>
     /// Reference to the last Label positioned
@@ -58,6 +60,10 @@ public class SceneOrganiser : MonoBehaviour
     private Vector3 captureTimeHeadPosition;
     private LayerMask captureTimeRaycastMask;
 
+    private GameObject lastLoadingIcon;
+
+    private EnvironmentData envData;
+
     // Start is called before the first frame update
 
     /// <summary>
@@ -76,6 +82,8 @@ public class SceneOrganiser : MonoBehaviour
 
         // Add the CustomVisionObjects class to this Gameobject
         gameObject.AddComponent<CustomVisionObjects>();
+
+        envData = new EnvironmentData();
     }
 
     /// <summary>
@@ -85,8 +93,10 @@ public class SceneOrganiser : MonoBehaviour
     {
         lastLabelPlaced = Instantiate(label.transform, cursor.transform.position, transform.rotation);
         lastLabelPlacedText = lastLabelPlaced.GetComponent<TextMesh>();
-        lastLabelPlacedText.text = "Loading...";
+        //lastLabelPlacedText.text = "Loading...";
         lastLabelPlaced.transform.localScale = new Vector3(0.005f, 0.005f, 0.005f);
+
+        lastLoadingIcon = makeLoadingIcon(cursor.transform.position, transform.rotation);
 
         latestDataPanelPosition = cursor.transform.position;
         latestDataPanelRotation = transform.rotation;
@@ -166,16 +176,19 @@ public class SceneOrganiser : MonoBehaviour
                     lastLabelPlaced.position = objHitInfo.point;
                     latestDataPanelPosition = objHitInfo.point;
                 }
+                Debug.Log("Success");
 
-                ObjectData data = new EnvironmentData().getObjectData(bestPrediction.tagName);
+                ObjectData data = envData.getObjectData(bestPrediction.tagName);
                 data.probability = bestPrediction.probability;
                 StartCoroutine(makeDataPanel(data, latestDataPanelPosition, latestDataPanelRotation));
             } else {
-                lastLabelPlacedText.text = "Failed";
 
-                IEnumerator coroutine = ResetText(lastLabelPlacedText, 5.0f);
-                StartCoroutine(coroutine);
+                LoadingRotation loadingRotation = lastLoadingIcon.GetComponent<LoadingRotation>();
+                loadingRotation.Failed();
             }
+
+            IEnumerator coroutine = ResetLoadingUI(lastLabelPlacedText, lastLoadingIcon, 5.0f);
+            StartCoroutine(coroutine);
         }
 
         // Reset the color of the cursor
@@ -185,10 +198,11 @@ public class SceneOrganiser : MonoBehaviour
         ImageCapture.Instance.ResetImageCapture();
     }
 
-    private IEnumerator ResetText(TextMesh label, float waitTime)
+    private IEnumerator ResetLoadingUI(TextMesh label, GameObject lastLoading, float waitTime)
     {
         yield return new WaitForSeconds(waitTime);
         label.text = "";
+        Destroy(lastLoading);
     }
 
     /// <summary>
@@ -214,11 +228,20 @@ public class SceneOrganiser : MonoBehaviour
         return new Vector3((float)normalisedPos_X, (float)normalisedPos_Y, 0);
     }
 
+    private GameObject makeLoadingIcon(Vector3 position, Quaternion rotation)
+    {
+        GameObject loadingIcon = GameObject.Instantiate(loadingIconPrefab, position, rotation);
+        loadingIcon.transform.localPosition = position;
+
+        return loadingIcon;
+    }
+
     private IEnumerator makeDataPanel(ObjectData data, Vector3 position, Quaternion rotation) {
         yield return new WaitForSeconds(0);
 
-        GameObject dataPanel = GameObject.Instantiate(dataPanelPrefab, position, rotation);
+        Debug.Log("make a data panel");
 
+        GameObject dataPanel = GameObject.Instantiate(dataPanelPrefab, position, rotation);
         dataPanel.transform.localPosition = position;
 
         Transform window = dataPanel.transform.Find("SF Window");

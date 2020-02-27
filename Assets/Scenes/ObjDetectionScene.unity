@@ -217,6 +217,8 @@ MonoBehaviour:
   label: {fileID: 1869554689552952, guid: af3281d0d47e84340abbb624b549db02, type: 3}
   dataPanelPrefab: {fileID: 3875502715350614477, guid: f0d502f96122c3742b8f07d27c570c0f,
     type: 3}
+  loadingIconPrefab: {fileID: 4986004519246236836, guid: 65a8a59053290e346a7464ff0bd0fd56,
+    type: 3}
 --- !u!81 &767375839
 AudioListener:
   m_ObjectHideFlags: 0

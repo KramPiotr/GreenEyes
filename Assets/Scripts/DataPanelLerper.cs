@@ -13,15 +13,16 @@ public class DataPanelLerper : MonoBehaviour
     private float duration;
 
     private Transform window;
-
+    /*
     IEnumerator Start()
     {
+        Debug.Log("Started data panel");
         window = transform.Find("SF Window");
         window.localScale = windowScale0;
         yield return Lerp(transform, scale0, scale1, duration/2);
         yield return Lerp(window, windowScale0, windowScale1, duration/2);
     }
-
+    */
     public IEnumerator Lerp(Transform t, Vector3 a, Vector3 b, float time) {
         float i = 0.0f;
         float rate = 1.0f / time;
