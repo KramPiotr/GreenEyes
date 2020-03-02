@@ -77,16 +77,35 @@ public class ImageCapture : MonoBehaviour
     /// </summary>
     private void TapHandler(TappedEventArgs obj)
     {
-        if (!captureIsActive)
+        if (GazeCursor.FocusedButton != null)
         {
-            captureIsActive = true;
-
-            // Set the cursor color to red
-            SceneOrganiser.Instance.cursor.GetComponent<Renderer>().material.color = Color.red;
-
-            // Begin the capture loop
-            Invoke("ExecuteImageCaptureAndAnalysis", 0);
+            if (GazeCursor.FocusedButton.name.Equals("DeleteButton"))
+            {
+                GazeCursor.FocusedButton.GetComponent<ControlDeleteButton>().CloseDataPanel();
+            }
+            else if (GazeCursor.FocusedButton.name.Equals("RestartButton"))
+            {
+                GazeCursor.FocusedButton.GetComponent<ControlRestartButton>().Restart();
+            }
+            else if (GazeCursor.FocusedButton.name.Equals("InfoButton"))
+            {
+                GazeCursor.FocusedButton.GetComponent<ControlInfoButton>().ShowInfo();
+            }
         }
+        else
+        {
+            if (!captureIsActive)
+            {
+                captureIsActive = true;
+
+                // Set the cursor color to red
+                SceneOrganiser.Instance.cursor.GetComponent<Renderer>().material.color = new Color(1.0f, 0.5f, 0.0f, 1.0f);
+
+                // Begin the capture loop
+                Invoke("ExecuteImageCaptureAndAnalysis", 0);
+            }
+        }
+
     }
 
     /// <summary>
@@ -166,8 +185,8 @@ public class ImageCapture : MonoBehaviour
     {
         captureIsActive = false;
 
-        // Set the cursor color to green
-        SceneOrganiser.Instance.cursor.GetComponent<Renderer>().material.color = Color.green;
+        // Set the cursor color to yellow
+        SceneOrganiser.Instance.cursor.GetComponent<Renderer>().material.color = Color.yellow;
 
         // Stop the capture loop if active
         CancelInvoke();

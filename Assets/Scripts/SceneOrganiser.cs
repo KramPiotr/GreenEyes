@@ -42,7 +42,7 @@ public class SceneOrganiser : MonoBehaviour
     /// Current threshold accepted for displaying the label
     /// Reduce this value to display the recognition more often
     /// </summary>
-    internal float probabilityThreshold = 0.5f;
+    internal float probabilityThreshold = 0.3f;
 
     /// <summary>
     /// The quad object hosting the imposed image captured
@@ -96,7 +96,7 @@ public class SceneOrganiser : MonoBehaviour
         //lastLabelPlacedText.text = "Loading...";
         lastLabelPlaced.transform.localScale = new Vector3(0.005f, 0.005f, 0.005f);
 
-        lastLoadingIcon = makeLoadingIcon(cursor.transform.position, transform.rotation);
+        lastLoadingIcon = MakeLoadingIcon(cursor.transform.position, transform.rotation);
 
         latestDataPanelPosition = cursor.transform.position;
         latestDataPanelRotation = transform.rotation;
@@ -138,12 +138,38 @@ public class SceneOrganiser : MonoBehaviour
             // Sort the predictions to locate the highest one
             List<Prediction> sortedPredictions = new List<Prediction>();
             sortedPredictions = analysisObject.predictions.OrderBy(p => p.probability).ToList();
+
+            //TOO remove below
+            /*            quadRenderer = quad.GetComponent<Renderer>() as Renderer;
+                        Bounds quadBounds = quadRenderer.bounds;
+                        lastLabelPlaced.transform.parent = quad.transform;
+                        // Vector3 labelPosition = new Vector3((float)-quadBounds.size.normalized.x/2, (float)-quadBounds.size.normalized.y/2, 0);
+                        Vector3 labelPosition = new Vector3(0, 0, 0);
+                        lastLabelPlaced.transform.localPosition = labelPosition;
+                        lastLabelPlacedText.text = "";//bestPrediction.tagName;
+                        Debug.Log("Repositioning Label");
+                        Vector3 headPosition = Camera.main.transform.position;
+                        RaycastHit objHitInfo;
+                        Vector3 objDirection = lastLabelPlaced.position;
+
+                        if (Physics.Raycast(captureTimeHeadPosition, objDirection, out objHitInfo, 30.0f, captureTimeRaycastMask))
+                        {
+                            lastLabelPlaced.position = objHitInfo.point;
+                            latestDataPanelPosition = objHitInfo.point;
+                        }
+                        ObjectData data = envData.getObjectData("water bottle");
+                        data.probability = 0.90;
+                        StartCoroutine(makeDataPanel(data, latestDataPanelPosition, latestDataPanelRotation));
+                        IEnumerator coroutine = ResetLoadingUI(lastLabelPlacedText, lastLoadingIcon, 5.0f);
+                        StartCoroutine(coroutine); */
+            //TODO uncomment below
             Prediction bestPrediction = new Prediction();
 
             if (sortedPredictions.Count > 0)
             {
                 bestPrediction = sortedPredictions[sortedPredictions.Count - 1];
-            } else
+            }
+            else
             {
                 bestPrediction.probability = 0;
             }
@@ -170,7 +196,7 @@ public class SceneOrganiser : MonoBehaviour
                 Vector3 headPosition = Camera.main.transform.position;
                 RaycastHit objHitInfo;
                 Vector3 objDirection = lastLabelPlaced.position;
-                
+
                 if (Physics.Raycast(captureTimeHeadPosition, objDirection, out objHitInfo, 30.0f, captureTimeRaycastMask))
                 {
                     lastLabelPlaced.position = objHitInfo.point;
@@ -180,8 +206,10 @@ public class SceneOrganiser : MonoBehaviour
 
                 ObjectData data = envData.getObjectData(bestPrediction.tagName);
                 data.probability = bestPrediction.probability;
-                StartCoroutine(makeDataPanel(data, latestDataPanelPosition, latestDataPanelRotation));
-            } else {
+                StartCoroutine(MakeDataPanel(data, latestDataPanelPosition, latestDataPanelRotation));
+            }
+            else
+            {
 
                 LoadingRotation loadingRotation = lastLoadingIcon.GetComponent<LoadingRotation>();
                 loadingRotation.Failed();
@@ -192,7 +220,7 @@ public class SceneOrganiser : MonoBehaviour
         }
 
         // Reset the color of the cursor
-        cursor.GetComponent<Renderer>().material.color = Color.green;
+        cursor.GetComponent<Renderer>().material.color = Color.yellow;
 
         // Stop the analysis process
         ImageCapture.Instance.ResetImageCapture();
@@ -228,7 +256,7 @@ public class SceneOrganiser : MonoBehaviour
         return new Vector3((float)normalisedPos_X, (float)normalisedPos_Y, 0);
     }
 
-    private GameObject makeLoadingIcon(Vector3 position, Quaternion rotation)
+    private GameObject MakeLoadingIcon(Vector3 position, Quaternion rotation)
     {
         GameObject loadingIcon = GameObject.Instantiate(loadingIconPrefab, position, rotation);
         loadingIcon.transform.localPosition = position;
@@ -236,7 +264,7 @@ public class SceneOrganiser : MonoBehaviour
         return loadingIcon;
     }
 
-    private IEnumerator makeDataPanel(ObjectData data, Vector3 position, Quaternion rotation) {
+    private IEnumerator MakeDataPanel(ObjectData data, Vector3 position, Quaternion rotation) {
         yield return new WaitForSeconds(0);
 
         Debug.Log("make a data panel");
@@ -250,11 +278,12 @@ public class SceneOrganiser : MonoBehaviour
         TextMeshProUGUI titleMesh = titleLbl.GetComponent<TextMeshProUGUI>();
         titleMesh.text = data.name;
 
-        Transform descriptionLbl = window.Find("Description");
-        TextMeshProUGUI descriptionMesh = descriptionLbl.GetComponent<TextMeshProUGUI>();
-        descriptionMesh.text = "Climate Change: " + data.ClimateChange
-            + "\nLand Use: " + data.LandUse
-            + "\nWater Use: " + data.WaterUse
-            + "\nProb: " + data.probability;
+        Transform icons = window.Find("Icons");
+
+        PopulateGrid populateGrid = icons.GetComponent<PopulateGrid>();
+        populateGrid.scores[0] = data.carbonScore;
+        populateGrid.scores[1] = data.waterScore;
+        populateGrid.scores[2] = data.landScore;
+        populateGrid.Populate();
     }
 }
