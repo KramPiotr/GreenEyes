@@ -1,0 +1,3 @@
+The Environmental Footprint dataset was used with OpenLCA to calculate the environmental impacts of our chosen list of products.
+The European Commission require us to state that : 
+‘Within the Environmental Footprint dataset, the results for water use might be overestimated and shall therefore be interpreted with caution. This problem has nothing to do with the impact assessment method or the implementability of EF methods, but occurred during the technical development of some datasets. All results remain valid and usable. The Environmental Footprint datasets will be updated in 2019 (which will automatically adjust the regionalised water flows).’
